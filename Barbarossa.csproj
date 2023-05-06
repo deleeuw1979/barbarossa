@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DCA2CCA-B96F-420A-9BE2-738FB1287723}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Barbarossa</RootNamespace>
+    <AssemblyName>Barbarossa</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Barbarossa.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="City.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="City.Designer.cs">
+      <DependentUpon>City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="Map.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail.Designer.cs">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reinforcements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reinforcements.Designer.cs">
+      <DependentUpon>Reinforcements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Unit.Designer.cs">
+      <DependentUpon>Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="City.resx">
+      <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail.resx">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reinforcements.resx">
+      <DependentUpon>Reinforcements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit.resx">
+      <DependentUpon>Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Rules.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes.txt" />
+    <Content Include="Resources\german.ico" />
+    <None Include="Resources\Units\Russland_Big.jpg" />
+    <None Include="Resources\German_City2.gif" />
+    <Content Include="Resources\Supply.png" />
+    <None Include="Resources\Units\Russland_Light2.png" />
+    <None Include="Resources\Units\Russland.jpg" />
+    <None Include="Resources\Units\Russland_Light.png" />
+    <None Include="Resources\Units\Small\P - Copy.gif" />
+    <None Include="Resources\Units\Small\_SSpz.gif" />
+    <None Include="Resources\Units\Small\_SSpg.gif" />
+    <None Include="Resources\Units\Small\_SSkav.gif" />
+    <None Include="Resources\Units\Small\_SSinfHW.gif" />
+    <None Include="Resources\Units\Small\_SSinf.gif" />
+    <None Include="Resources\Units\Small\_SS.gif" />
+    <None Include="Resources\Units\Small\_RUtank.gif" />
+    <None Include="Resources\Units\Small\_RUpz.gif" />
+    <None Include="Resources\Units\Small\_RUmot.gif" />
+    <None Include="Resources\Units\Small\_RUkav.gif" />
+    <None Include="Resources\Units\Small\_RUinf.gif" />
+    <None Include="Resources\Units\Small\_RUfj.gif" />
+    <None Include="Resources\Units\Small\_RU.gif" />
+    <None Include="Resources\Units\Small\_P.gif" />
+    <None Include="Resources\Units\Small\_GEpzgr.gif" />
+    <None Include="Resources\Units\Small\_GEpz.gif" />
+    <None Include="Resources\Units\Small\_GEpg.gif" />
+    <None Include="Resources\Units\Small\_GEmot.gif" />
+    <None Include="Resources\Units\Small\_GElw.gif" />
+    <None Include="Resources\Units\Small\_GElf.gif" />
+    <None Include="Resources\Units\Small\_GEkav.gif" />
+    <None Include="Resources\Units\Small\_GEinf.gif" />
+    <None Include="Resources\Units\Small\_GEgeb.gif" />
+    <None Include="Resources\Units\Small\_GEfz.gif" />
+    <None Include="Resources\Units\Small\_GE.gif" />
+    <None Include="Resources\Units\Small\_GDpz.gif" />
+    <None Include="Resources\Units\Small\_GDmech.gif" />
+    <None Include="Resources\Units\Small\_GDkav.gif" />
+    <None Include="Resources\Units\Small\_GDinf.gif" />
+    <None Include="Resources\Units\Small\_GDfj.gif" />
+    <None Include="Resources\Units\Small\_GD.gif" />
+    <None Include="Resources\Units\Small\_F.gif" />
+    <None Include="Resources\Units\Small\_B.gif" />
+    <None Include="Resources\Units\Small\_AXpz.gif" />
+    <None Include="Resources\Units\Small\_AXmot.gif" />
+    <None Include="Resources\Units\Small\_AXmech.gif" />
+    <None Include="Resources\Units\Small\_AXkav.gif" />
+    <None Include="Resources\Units\Small\_AXinf.gif" />
+    <None Include="Resources\Units\Small\_AXgeb.gif" />
+    <None Include="Resources\Units\Small\_AXfinn.gif" />
+    <None Include="Resources\Units\Small\_AXfin.gif" />
+    <None Include="Resources\Units\Small\_AX.gif" />
+    <EmbeddedResource Include="Resources\Units\GElf.gif" />
+    <EmbeddedResource Include="Resources\German_City.gif" />
+    <EmbeddedResource Include="Resources\Converted_Railroad.gif" />
+    <EmbeddedResource Include="Resources\German.jpg" />
+    <EmbeddedResource Include="Resources\Russian.jpg" />
+    <EmbeddedResource Include="Resources\Units\Terrain.jpg" />
+    <EmbeddedResource Include="Resources\Units\SSpz.gif" />
+    <EmbeddedResource Include="Resources\Units\SSpg.gif" />
+    <EmbeddedResource Include="Resources\Units\SSkav.gif" />
+    <EmbeddedResource Include="Resources\Units\SSinfHW.gif" />
+    <EmbeddedResource Include="Resources\Units\SSinf.gif" />
+    <EmbeddedResource Include="Resources\Units\SS.gif" />
+    <EmbeddedResource Include="Resources\Units\RUtank.gif" />
+    <EmbeddedResource Include="Resources\Units\RUsk.gif" />
+    <EmbeddedResource Include="Resources\Units\RUpz.gif" />
+    <EmbeddedResource Include="Resources\Units\RUmot.gif" />
+    <EmbeddedResource Include="Resources\Units\RUkav.gif" />
+    <EmbeddedResource Include="Resources\Units\RUinf.gif" />
+    <EmbeddedResource Include="Resources\Units\RUfj.gif" />
+    <EmbeddedResource Include="Resources\Units\RU.gif" />
+    <EmbeddedResource Include="Resources\Units\P.gif" />
+    <EmbeddedResource Include="Resources\Units\GEpzgr.gif" />
+    <EmbeddedResource Include="Resources\Units\GEpz.gif" />
+    <EmbeddedResource Include="Resources\Units\GEpg.gif" />
+    <EmbeddedResource Include="Resources\Units\GEmot.gif" />
+    <EmbeddedResource Include="Resources\Units\GElw.gif" />
+    <EmbeddedResource Include="Resources\Units\GEkav.gif" />
+    <EmbeddedResource Include="Resources\Units\GEinf.gif" />
+    <EmbeddedResource Include="Resources\Units\GEgeb.gif" />
+    <EmbeddedResource Include="Resources\Units\GE.gif" />
+    <EmbeddedResource Include="Resources\Units\GDsk.gif" />
+    <EmbeddedResource Include="Resources\Units\GDpz.gif" />
+    <EmbeddedResource Include="Resources\Units\GDmech.gif" />
+    <EmbeddedResource Include="Resources\Units\GDkav.gif" />
+    <EmbeddedResource Include="Resources\Units\GDinf.gif" />
+    <EmbeddedResource Include="Resources\Units\GDfj.gif" />
+    <EmbeddedResource Include="Resources\Units\GD.gif" />
+    <EmbeddedResource Include="Resources\Units\F.gif" />
+    <EmbeddedResource Include="Resources\Units\AXpz.gif" />
+    <EmbeddedResource Include="Resources\Units\AXmot.gif" />
+    <EmbeddedResource Include="Resources\Units\AXmech.gif" />
+    <EmbeddedResource Include="Resources\Units\AXkav.gif" />
+    <EmbeddedResource Include="Resources\Units\AXinf.gif" />
+    <EmbeddedResource Include="Resources\Units\AXgeb.gif" />
+    <EmbeddedResource Include="Resources\Units\AXfinn.gif" />
+    <EmbeddedResource Include="Resources\Units\AXfin.gif" />
+    <EmbeddedResource Include="Resources\Units\AX.gif" />
+    <EmbeddedResource Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

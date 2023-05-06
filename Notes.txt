@@ -1,0 +1,141 @@
+Replacements/Reinforcement Notification
+Partisan
+Supply
+Side not on turn has it's units hidden / Cannot check stats for enemy units
+Surprise (for German only?) (Once per game?)
+!Units relo-ing to Black Sea!
+Saved Weather etc.
+
+---------------------------------------------------------------------------------------------
+
+Command show all unit (friendly) units 
+
+Surprise
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+!Units stay hidden under Towns etc./can't be clicked on to move 
+
+Events Notification
+
+Repos cities
+
+no "Close"
+
+terrain for unit not on next line
+
+Delay (end of turn) greater chance for Russians
+
+weather "zones" - Southern (Ukraine, Caucausus), Central, Northern (Estonia(?), Latvia(?) Leningrad)
+
+"localized"  weather (esp. for Rain/Snowing) at Combat, beginning of Movement	 
+
+chance that each reinforcement unit might not appear
+
+Have RR blocks always beneath units
+
+Less pink for RR possession
+
+List of coming reinforcements (accurate?) For that year? For next 6 months (overlapping years)? for next Month?
+
+!No reinforcements!
+
+Round for unit factors
+
+"localized"  weather (esp. for Rain/Snowing), at start/end of Movement
+	- time/area scale implies that it'll be raining/snowing somewhere during movement  
+
+!Calendar doesn't advance part Jun 41!
+
+Have start-up windows not be standard pop-ups
+
+NOT starting on correct turn, no units are on map!
+
+Pop up at start showing 
+1) Month/Week
+2) Weather Conditions
+3) Who's on turn
+
+Possibility (small) of game starting a week later
+
+Use enums (particularly when saving game)?
+
+Higher-numbered divisions --> Later units --> Lower strength?    
+
+Forest: less cover during winter
+        
+Swamp,River: better movement during winter
+
+Remember Rerplacements/Reinforcements: Monthly
+
+Soviet: Add up city replacement points added; Starting October 41, +1 modifier/Starting 1942, +2 (additional)  modifier
+
+random done 0-->pointTotal; result is number of (eliminated) units, randomly chosen from pool, returned to board
+
+random done to set returning unit as Guard?
+
+When do partisan units appear?
+
+German: random (0-12[months in year]);  If 1 - 1 (eliminated) unit returned; if >1 NONE
+
+Modified by Italian surrender by -1; by D-Day -1 (additional); if 0 - a unit is REMOVED!
+
+Do random for increase in partisan, decrease in Luftwaffe, Spanish, Italian units
+
+Upgrade for "Leibstandarte AH", "Das Reich", "Totenkopf", random starting April or May 1943?
+
+Based on amount of resupply; Unit must be in City/Major City
+
+1943 From Week 1 August to Week 4 September, random is done for Italian surrender
+
+1943 From Week 1 May to Week 1 November, random is done for withdrawal of Azul; modified by Italian surrender
+
+1944 From Week 1 May to Week 4 June, random is done for D-Day                        
+
+Starting 1941 November, and done every month turn, random done for partisan; randomly placed
+
+1942 (Week 1 January), random done to for Luftflotte units (0-3); starting 1943, done with -1 modifier
+
+MOVEMENT -- OR LACK OF MOVEMENT -- AFFECTS this.detection (AND this.intel?)
+
+TERRAIN AFFECTS this.detection!!
+
+Transfer supplies from another city(/edge?)
+            
+Remember Replacements/Reinforcements: Monthly
+
+Soviet: Add up city replacement points added; Starting October 41, +1 modifier/Starting 1942, +2 (additional)  modifier
+
+random done 0-->pointTotal; result is number of (eliminated) units, randomly chosen from pool, returned to board
+
+random done to set returning unit as Guard?
+
+When do partisan units appear?
+
+German: random (0-12[months in year]);  If 1 - 1 (eliminated) unit returned; if >1 NONE
+
+Modified by Italian surrender by -1; by D-Day -1 (additional); if 0 - a unit is REMOVED!
+
+Replacement Upgrades:
+
+Russian - All --> Gd (or Shock?): 2-7,3-8,4-9,5-10 6-11
+            
+German - Inf --> PzGr; PzGr --> Pz: 18-21-24,25-28-29
+ 
+Upgrade for "Leibstandarte AH", "Das Reich", "Totenkopf", random starting April or May 1943?
+
+Based on amount of resupply; Unit must be in City/Major City
+
+1943 From Week 1 August to Week 4 September, random is done for Italian surrender
+
+BTW - Remove the italian units upon Italian Surrender!!!
+
+1943 From Week 1 May to Week 1 November, random is done for withdrawal of Azul; modified by Italian surrender(?)
+
+1944 From Week 1 May to Week 4 June, random is done for D-Day; success rnd??                        
+
+1944 From Week 1 Jan, rnd for finnish withdrawal ONLY if Leningrad or Moscow are not in German possession  
+
+Partisans: Starting 1941 November, and done every month turn, random done for partisan; randomly placed        
+
+Luftwaffe Removal: 1942 (Week 1 January), random done to for Luftflotte units (0-3); starting 1943, done with -1 modifier 
