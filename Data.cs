@@ -613,11 +613,7 @@ namespace Barbarossa
         public static List<string> conditions = new List<string>() { "Calm", "Heat", "Rain", "Mud", "Snow", "Snowing", "Clear", "River", "Town", "Swamp", "Woods", "City", "Mountains" };
         public static string[] weatherConditions = new string[] { "Snowing", "Rain", "Calm", "Heat" };
         public static string[] groundConditions = new string[] { "Mud", "Snow" };
-
-        
-        
-        
-        
+                
         public static int[][] weather = new int[][]
         {
             new int[]{97,101,100,101}, 
@@ -684,10 +680,7 @@ namespace Barbarossa
         };
         
         public static int[][] unitCoords = new int[][] 
-        { 
-            /*
-            new int[] { 16, 1690 }, new int[] { 23, 1720 }, new int[] { 28, 1750 },  new int[] { 14, 1650 }, new int[] { 40, 1780 }, new int[] { 1045, 2762 }, new int[] { 927, 2744 }, new int[] { 949, 2735 }, new int[] { 965, 2728 }, new int[] { 978, 2714 }, new int[] { 993, 2704 }, new int[] { 996, 2695 }, new int[] { 1005, 2681 }, new int[] { 1008, 2668 }, new int[] { 1033, 2692 }, new int[] { 1049, 2682 }, new int[] { 1013, 2650 }, new int[] { 1020, 2636 }, new int[] { 1044, 2628 }, new int[] { 1071, 2632 }, new int[] { 1101, 2653 }, new int[] { 1086, 2660 }, new int[] { 1133, 2653 }, new int[] { 1153, 2678 }, new int[] { 1181, 2693 }, new int[] { 1183, 2684 }, new int[] { 1168, 2711 }, new int[] { 1211, 2690 }, new int[] { 1238, 2701 }, new int[] { 1217, 2722 }, new int[] { 1242, 2746 }, new int[] { 1265, 2711 }, new int[] { 1279, 2738 }, new int[] { 1276, 2761 }, new int[] { 1268, 2788 }, new int[] { 1263, 2790 }, new int[] { 1094, 2651 }, new int[] { 1110, 2654 }, new int[] { 1128, 2658 }, new int[] { 1147, 2659 }, new int[] { 1143, 2679 }, new int[] { 1168, 2676 }, new int[] { 1188, 2678 }, new int[] { 1184, 2699 }, new int[] { 1212, 2685 }, new int[] { 1235, 2690 }, new int[] { 1225, 2707 }, new int[] { 1256, 2703 }, new int[] { 1266, 2723 }, new int[] { 1276, 2742 }, new int[] { 1282, 2759 }, new int[] { 1288, 2781 }, new int[] { 1311, 2784 }, new int[] { 1338, 2788 }, new int[] { 1336, 2771 }, new int[] { 1359, 2772 }, new int[] { 1383, 2772 }, new int[] { 1403, 2774 }, new int[] { 1423, 2773 }, new int[] { 1444, 2774 }, new int[] { 1462, 2766 }, new int[] { 1485, 2758 }, new int[] { 1480, 2784 }, new int[] { 1508, 2784 }, new int[] { 1507, 2763 }, new int[] { 1533, 2775 }, new int[] { 1526, 2756 }, new int[] { 1534, 2745 }, new int[] { 1554, 2763 }, new int[] { 1548, 2735 }, new int[] { 1562, 2729 }, new int[] { 1574, 2718 }, new int[] { 1582, 2703 }, new int[] { 1594, 2724 }, new int[] { 1596, 2690 }, new int[] { 1611, 2709 }, new int[] { 1614, 2674 }, new int[] { 1636, 2680 }, new int[] { 1659, 2687 }, new int[] { 1688, 2692 }, new int[] { 1707, 2700 }, new int[] { 1691, 2722 }, new int[] { 1728, 2698 }, new int[] { 1746, 2695 }, new int[] { 1764, 2712 }, new int[] { 1787, 2712 }, new int[] { 1787, 2734 }, new int[] { 1806, 2719 }, new int[] { 1824, 2711 }, new int[] { 1822, 2726 }, new int[] { 1843, 2709 }, new int[] { 1856, 2701 }, new int[] { 1754, 2727 }, new int[] { 1749, 2713 }, new int[] { 2281, 2728 }, new int[] { 2257, 2730 }, new int[] { 2222, 2727 }, new int[] { 2195, 2736 }, new int[] { 2171, 2751 }, new int[] { 2125, 2754 }, new int[] { 2147, 2761 }, new int[] { 2101, 2759 }, new int[] { 2107, 2764 }, new int[] { 2053, 2755 }, new int[] { 2069, 2754 }, new int[] { 2087, 2766 }, new int[] { 2039, 2755 }, new int[] { 2020, 2754 }, new int[] { 2002, 2758 }, new int[] { 2039, 2769 }, new int[] { 1979, 2756 }, new int[] { 1860, 2737 }, new int[] { 1878, 2723 }, new int[] { 1897, 2719 }, new int[] { 1916, 2710 }, new int[] { 1937, 2711 }, new int[] { 1954, 2722 }, new int[] { 1959, 2746 }, new int[] { 1959, 2760 }, new int[] { 1941, 2734 }, new int[] { 1862, 2719 }, new int[] { 2088, 2790 }, new int[] { 2086, 2790 }, new int[] { 2314, 2738 }, new int[] { 2338, 2719 }, new int[] { 2366, 2700 }, new int[] { 2406, 2670 }, new int[] { 2422, 2650 }, new int[] { 2442, 2620 }, new int[] { 2473, 2596 }, new int[] { 2498, 2566 }, new int[] { 2526, 2543 }, new int[] { 2556, 2521 }, new int[] { 2586, 2514 }, new int[] { 2610, 2499 }, new int[] { 2635, 2494 }, new int[] { 2676, 2485 }, new int[] { 2709, 2469 }, new int[] { 2755, 2461 }, new int[] { 2797, 2449 }, new int[] { 2833, 2439 }, new int[] { 2869, 2443 }, new int[] { 2912, 2448 }, new int[] { 2961, 2455 }, new int[] { 2993, 2459 }, new int[] { 3030, 2468 }, new int[] { 58, 1650 }, new int[] { 575, 2000 }, new int[] { 67, 1735 }, new int[] { 225, 1685 }, new int[] { 74, 1775 }, new int[] { 901, 2728 }, new int[] { 675, 2500}, new int[] { 978, 2670 }, new int[] { 1007, 2622 }, new int[] { 1055, 2599 }, new int[] { 1098, 2618 }, new int[] { 756, 2635 }, new int[] { 849, 2515 }, new int[] { 1009, 2476 }, new int[] { 1149, 2633 }, new int[] { 1200, 2643 }, new int[] { 1251, 2555 }, new int[] { 1281, 2668 }, new int[] { 1307, 2688 }, new int[] { 1330, 2726 }, new int[] { 1366, 2727 }, new int[] { 1425, 2724 }, new int[] { 1462, 2716 }, new int[] { 1508, 2701 }, new int[] { 1558, 2680 }, new int[] { 1165, 2496 }, new int[] { 1375, 2200 }, new int[] { 1306, 2275 }, new int[] { 1400, 2400 }, new int[] { 1424, 2147 }, new int[] { 1494, 2544 }, new int[] { 1578, 2546 }, new int[] { 1400, 2533 }, new int[] { 1610, 2646 }, new int[] { 1669, 2663 }, new int[] { 1900, 2575 }, new int[] { 1821, 2674 }, new int[] {  3032, 2206   }, new int[] { 2100, 2250 }, new int[] { 1733, 2500 }, new int[] { 2183, 2625 }, new int[] { 2625, 2425 }, new int[] { 2500, 2393 }, new int[] { 2390, 2540 }, new int[] { 2425, 2512 }, new int[] { 2760, 2386 }, new int[] { 2000, 2500 }, new int[] { 2000, 2438 }, new int[] { 1733, 2424 }, new int[] { 2050, 2550 }, new int[] { 2753, 2393 }, new int[] { 2823, 2368 }, new int[] { 2879, 2364 }, new int[] { 2928, 2339 }, new int[] { 2066, 2666 }, new int[] { 3025, 2262 }, new int[] {  2375, 2400}, new int[] { 2960, 2124 }, new int[] { 2200, 2500 }, new int[] { 2300, 2500 }, new int[] { 2000, 2326 }, new int[] { 2100, 2352 }, new int[] { 2175, 2288 }, new int[] { 2350, 2288 }, new int[] { 1174, 1112 }, new int[] { 1174, 1112 }, new int[] { 1182, 1087 }, new int[] { 1179, 984 }, new int[] { 1197, 1000 }, new int[] { 1412, 1275 }, new int[] { 1335, 1152 }, new int[] { 1354, 1167 }, new int[] { 930, 1259 }, new int[] { 934, 1288 }, new int[] { 1029, 1457 }, new int[] { 1054, 1459 }, new int[] { 1610, 1503 }, new int[] { 1631, 1527 }, new int[] { 1286, 1689 }, new int[] { 1294, 1721 }, new int[] { 1064, 1174 }, new int[] { 1140, 1254 }, new int[] { 1226, 1250 }, new int[] { 1273, 1222 }, new int[] { 1169, 1100 }, new int[] { 3600, 608 }, new int[] { 3600, 608 }, new int[] { 3408, 873 }, new int[] { 3479, 1008 }, new int[] { 3880, 449 }, new int[] { 2630, 2200 }, new int[] { 3824, 876 }, new int[] { 3270, 980 }
-             */
+        {        
             new int[] {8,650},new int[] {11,662},new int[] {13,673},new int[] {7,635},new int[] {19,685},new int[] {498,1062},new int[] {441,1055},new int[] {452,1052},new int[] {460,1049},new int[] {466,1044},new int[] {473,1040},new int[] {474,1037},new int[] {479,1031},new int[] {480,1026},new int[] {492,1035},new int[] {500,1032},new int[] {482,1019},new int[] {486,1014},new int[] {497,1011},new int[] {510,1012},new int[] {524,1020},new int[] {517,1023},new int[] {540,1020},new int[] {549,1030},new int[] {562,1036},new int[] {563,1032},new int[] {556,1043},new int[] {577,1035},new int[] {590,1039},new int[] {580,1047},new int[] {591,1056},new int[] {602,1043},new int[] {609,1053},new int[] {608,1062},new int[] {604,1072},new int[] {601,1073},new int[] {521,1020},new int[] {529,1021},new int[] {537,1022},new int[] {546,1023},new int[] {544,1030},new int[] {556,1029},new int[] {566,1030},new int[] {564,1038},new int[] {577,1033},new int[] {588,1035},new int[] {583,1041},new int[] {598,1040},new int[] {603,1047},new int[] {608,1055},new int[] {610,1061},new int[] {613,1070},new int[] {624,1071},new int[] {637,1072},new int[] {636,1066},new int[] {647,1066},new int[] {659,1066},new int[] {668,1067},new int[] {678,1067},new int[] {688,1067},new int[] {696,1064},new int[] {707,1061},new int[] {705,1071},new int[] {718,1071},new int[] {718,1063},new int[] {730,1067},new int[] {727,1060},new int[] {730,1056},new int[] {740,1063},new int[] {737,1052},new int[] {744,1050},new int[] {750,1045},new int[] {753,1040},new int[] {759,1048},new int[] {760,1035},new int[] {767,1042},new int[] {769,1028},new int[] {779,1031},new int[] {790,1033},new int[] {804,1035},new int[] {813,1038},new int[] {805,1047},new int[] {823,1038},new int[] {831,1037},new int[] {840,1043},new int[] {851,1043},new int[] {851,1052},new int[] {860,1046},new int[] {869,1043},new int[] {868,1048},new int[] {878,1042},new int[] {884,1039},new int[] {835,1049},new int[] {833,1043},new int[] {1086,1049},new int[] {1075,1050},new int[] {1058,1049},new int[] {1045,1052},new int[] {1034,1058},new int[] {1012,1059},new int[] {1022,1062},new int[] {1000,1061},new int[] {1003,1063},new int[] {978,1060},new int[] {985,1059},new int[] {994,1064},new int[] {971,1060},new int[] {962,1059},new int[] {953,1061},new int[] {971,1065},new int[] {942,1060},new int[] {886,1053},new int[] {894,1047},new int[] {903,1046},new int[] {912,1042},new int[] {922,1043},new int[] {930,1047},new int[] {933,1056},new int[] {933,1062},new int[] {924,1052},new int[] {887,1046},new int[] {994,1073},new int[] {993,1073},new int[] {1102,1053},new int[] {1113,1046},new int[] {1127,1038},new int[] {1146,1027},new int[] {1153,1019},new int[] {1163,1008},new int[] {1178,998},new int[] {1190,987},new int[] {1203,978},new int[] {1217,970},new int[] {1231,967},new int[] {1243,961},new int[] {1255,959},new int[] {1274,956},new int[] {1290,950},new int[] {1312,947},new int[] {1332,942},new int[] {1349,938},new int[] {1366,940},new int[] {1387,942},new int[] {1410,944},new int[] {1425,946},new int[] {1443,949},new int[] {28,635},new int[] {274,769},new int[] {32,667},new int[] {107,648},new int[] {35,683},new int[] {429,1049},new int[] {321,962},new int[] {466,1027},new int[] {480,1008},new int[] {502,1000},new int[] {523,1007},new int[] {360,1013},new int[] {404,967},new int[] {480,952},new int[] {547,1013},new int[] {571,1017},new int[] {596,983},new int[] {610,1026},new int[] {622,1034},new int[] {633,1048},new int[] {650,1049},new int[] {679,1048},new int[] {696,1045},new int[] {718,1039},new int[] {742,1031},new int[] {555,960},new int[] {655,846},new int[] {622,875},new int[] {667,923},new int[] {678,826},new int[] {711,978},new int[] {751,979},new int[] {667,974},new int[] {767,1018},new int[] {795,1024},new int[] {905,990},new int[] {867,1028},new int[] {1444,848},new int[] {1000,865},new int[] {825,962},new int[] {1040,1010},new int[] {1250,933},new int[] {1190,920},new int[] {1138,977},new int[] {1155,966},new int[] {1314,918},new int[] {952,962},new int[] {952,938},new int[] {825,932},new int[] {976,981},new int[] {1311,920},new int[] {1344,911},new int[] {1371,909},new int[] {1394,900},new int[] {984,1025},new int[] {1440,870},new int[] {1131,923},new int[] {1410,817},new int[] {1048,962},new int[] {1095,962},new int[] {952,895},new int[] {1000,905},new int[] {1036,880},new int[] {1119,880},new int[] {559,428},new int[] {559,428},new int[] {563,418},new int[] {561,378},new int[] {570,385},new int[] {672,490},new int[] {636,443},new int[] {645,449},new int[] {443,484},new int[] {445,495},new int[] {490,560},new int[] {502,561},new int[] {767,578},new int[] {777,587},new int[] {612,650},new int[] {616,662},new int[] {507,452},new int[] {543,482},new int[] {584,481},new int[] {606,470},new int[] {557,423},new int[] {1714,234},new int[] {1714,234},new int[] {1623,336},new int[] {1657,388},new int[] {1848,173},new int[] {1252,846},new int[] {1821,337},new int[] {1557,377},
         };
 
@@ -702,18 +695,15 @@ namespace Barbarossa
     {
         //week of month, week of year, side,last unit, starting turn, changed side         
         public static int[] turn = { 4, 24, 0, -1, 24,0};
-        public static Unit lastMoved=null;
-        
-        //Data.calendar[round.currentCalendar[0]][round.currentCalendar[1]][1]))
+        public static Unit lastMoved=null;        
 
         //Year, Month, # of Units arriving, # of units on board (cumulative)
         public static int[] currentCalendar = { 0, 6, 239, 0 };
 
-        //3 zones: Baltic,Russian, Ukranian
+        //3 zones: Baltic,Russian, Ukranian?
         public static string[] currentWeather = {"Calm","Calm","Calm"}; //i.e. Rain
         public static string[] currentGround = { "Clear", "Clear", "Clear" };  //i.e. Mud    
         
-
         public static bool[] invasions = { false, false, true };
         public static bool[] moscowTaken = { false, false };
         public static double[] points = { 0, 0 };
@@ -722,27 +712,11 @@ namespace Barbarossa
         //change size of terrain and map
         public static System.Drawing.Bitmap terrain = new System.Drawing.Bitmap(global::Barbarossa.Properties.Resources.Terrain);
 
-        //Check phyiscal size of screen (for TV vs. Computer)
-        //[System.Runtime.InteropServices.DllImport("gdi32.dll")]//, CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true
-        //public static extern int GetDeviceCaps(IntPtr hDC, int nIndex);
-
         //Make available for Game and Unit cs
         [DllImport("gdi32.dll")]
         public static extern int GetDeviceCaps(IntPtr hdc, int nIndex);
         public const int HORZSIZE = 4;
         public const int VERTSIZE = 6;
-        public const double MM_TO_INCH_CONVERSION_FACTOR = 25.4;
-        /*
-        var hDC = Graphics.FromHwnd(this.Handle).GetHdc();
-        public static int horizontalSizeInMilliMeters = GetDeviceCaps(hDC, HORZSIZE);
-        public static double horizontalSizeInInches = horizontalSizeInMilliMeters / MM_TO_INCH_CONVERSION_FACTOR;
-        public static int verticalSizeInMilliMeters = GetDeviceCaps(hDC, VERTSIZE);
-        public static double verticalSizeInInches = verticalSizeInMilliMeters / MM_TO_INCH_CONVERSION_FACTOR;
-        //physicalX=horizontalSizeInInches/1920;
-        //physicalY = verticalSizeInInches / 1080;
-        public static double physicalX = horizontalSizeInInches / 26.6;
-        public static double physicalY = verticalSizeInInches / 15;
-        public static double physicalDelta = Math.Sqrt((physicalX * physicalX) + (physicalY * physicalY));
-        */
+        public const double MM_TO_INCH_CONVERSION_FACTOR = 25.4;     
     }
 }

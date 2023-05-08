@@ -11,7 +11,6 @@ namespace Barbarossa
 {
     public partial class Detail : Form
     {
-
         public Int32 ratioX;
         public Int32 ratioY;
         public bool doMove = false;
@@ -32,39 +31,22 @@ namespace Barbarossa
         protected override void OnPaintBackground(PaintEventArgs e)
         {
             base.OnPaintBackground(e);
-
-            
-            /*
-            var rc = new Rectangle(Game.MousePosition.X - backgroundImage.Width,
-                Game.MousePosition.Y - backgroundImage.Height,
-                500,500);
-            */
-
+  
             rc = new Rectangle((0-(Game.MousePosition.X )*2)+150,
                 (0-(Game.MousePosition.Y)*2)+150,
                 backgroundImage.Width, backgroundImage.Height);
             e.Graphics.DrawImage(backgroundImage, rc);
-
-
         }
-
 
         private void Detail_Paint(object sender, PaintEventArgs e)
         {
-        //    MessageBox.Show("YYY");
-
-       
+      
         }
 
         private void Detail_Load(object sender, EventArgs e)
         {
 
-            /*
-            this.Left = MousePosition.X - 175;
-            this.Top = MousePosition.Y - 175;
-            */
-
-            if (MousePosition.X > 350)
+           if (MousePosition.X > 350)
                 this.Left = 0;
             else
                 this.Left = 1570;
@@ -72,15 +54,9 @@ namespace Barbarossa
             if (MousePosition.Y > 350)
                 this.Top = 0;
             else
-                this.Left = 730; 
+                this.Left = 730;                 
 
-                
-
-            showUnits();
-            
-           // ((0-(Game.MousePosition.X )*2)+150);
-           // ((0 - (Game.MousePosition.Y) * 2) + 150);
-           
+            showUnits();          
         }
 
         private void showUnits()
@@ -89,19 +65,14 @@ namespace Barbarossa
             {
                 if (this.Owner.Controls[c].GetType().ToString() == "Barbarossa.Unit")
                 {
-                    Unit overviewControl = new Unit();
-                    //overviewControl.Left = Convert.ToInt32(MousePosition.X-(this.Controls[c].Left)+200);
-                    //overviewControl.Top = Convert.ToInt32(MousePosition.Y - (this.Controls[c].Top) +200);
-
+                    Unit overviewControl = new Unit();       
                     overviewControl.Left = Convert.ToInt32((this.Owner.Controls[c].Left * 2) + ((0 - (Game.MousePosition.X) * 2) + 150));
                     overviewControl.Top = Convert.ToInt32((this.Owner.Controls[c].Top * 2) + ((0 - (Game.MousePosition.Y) * 2) + 150));
-
                     overviewControl.Width = Convert.ToInt32(this.Owner.Controls[c].Width * 2);
                     overviewControl.Height = Convert.ToInt32(this.Owner.Controls[c].Height * 2);
                     overviewControl.BackgroundImage = this.Owner.Controls[c].BackgroundImage;
                     overviewControl.BackColor = this.Owner.Controls[c].BackColor;
                     overviewControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-                    //Unit currentOverviewControl = (Unit)ParentForm.Controls[c];
                     this.Controls.Add(overviewControl);
                 }
             }
@@ -124,9 +95,6 @@ namespace Barbarossa
         private void Detail_MouseUp(object sender, MouseEventArgs e)
         {
             doMove = false;
-           //this.Refresh();
-            //showUnits();
-       
         }
     }
 }
